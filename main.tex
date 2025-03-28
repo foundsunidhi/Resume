@@ -1,0 +1,154 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{enumitem}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sunidhi Mundra} \\ \vspace{1pt}
+    \href{tel:+918319712343}{\underline{+91 8319712343}} $|$ \href{mailto:sunidhimundra05@gmail.com}{\underline{sunidhimundra05@gmail.com}} $|$ 
+    \href{www.linkedin.com/in/sunidhi-mundra}{\underline{Linkedin}} $|$
+    \href{https://github.com/foundsunidhi}{\underline{Github}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology(VIT) }{Bhopal, IN}
+      {Integrated Master of Technology in Artificial Intelligence}{September 2024 -- 2029}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+   \resumeSubheading
+      {Software Development Engineer (SDE) Intern}{March 2024 -- Present}
+      {Viskk}{Remote}
+      \resumeItemListStart
+       \resumeItem{Developing a Windows application focused on enhancing user productivity and screen management.}
+        \resumeItem{Optimizing application performance and functionality to ensure a smooth user experience.}
+        \resumeItem{Collaborating with the team to refine the software and enhance its practical usability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{TicketScanning App} $|$ \emph{Flutter, MongoDB, QR Code Scanner}}{October 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a ticket validation system for seamless event check-ins.}
+            \resumeItem{Implemented QR code scanning with real-time ticket status updates (Invalid, Checked-in, Already Checked-in).}
+            \resumeItem{Integrated MongoDB as the backend for storing and validating ticket information.}
+            \resumeItem{Built a user-friendly UI in Flutter to ensure smooth scanning and error handling.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Leaderboard} $|$ \emph{Next.js, Google Sheets API}}{Feb 2025}
+          \resumeItemListStart
+            \resumeItem{Built a leaderboard system that dynamically fetches data from Google Sheets.}
+            \resumeItem{Designed a responsive UI that displays rankings for multiple categories.}
+            \resumeItem{Implemented a seamless data retrieval mechanism without requiring a dedicated backend.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI-Based Language Translator} $|$ \emph{Next.js, Google Translate API}}{March 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Creating a real-time translation app using Next.js and Google Translate API.}
+            \resumeItem{Designing a modular architecture to support multiple languages efficiently.}
+            \resumeItem{Optimizing UI for fast translations and smooth user experience.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Dart} \\
+     \textbf{Frameworks}{: Flutter} \\
+     \textbf{APIs}{: Google Sheets API, Google Translate API} \\
+     \textbf{Tools and Platforms}{: Git, Google Cloud Console}
+    }}
+ \end{itemize}
+
+%-----------ACTIVITIES-----------
+%-----------ACTIVITIES-----------
+\section{Activities}
+    \resumeItemListStart
+        \resumeItem{Active member of the Fintech Club at VIT(Bhopal). Member of the Technical Team, contributing to the development and optimization of digital solutions to enhance club initiatives and operations.}
+    \resumeItemListEnd
+\end{document}
